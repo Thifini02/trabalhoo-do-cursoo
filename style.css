@@ -1,0 +1,21 @@
+/* Estilos customizados adicionais */
+.scallop-top {
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, #FFF0F3 13px);
+    background-size: 20px 20px;
+    background-repeat: repeat-x;
+}
+
+.bg-dots {
+    background-image: radial-gradient(#FFCCD5 1px, transparent 1px);
+    background-size: 16px 16px;
+}
+
+/* Efeito de destaque delicado */
+.card-menu {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-menu:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(255, 77, 109, 0.15);
+}

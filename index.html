@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recanto Doce - Doceria & Confeitaria</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="style.js"></script>
+</head>
+
+<body class="bg-brand-50 font-sans text-brand-900 bg-dots min-h-screen flex flex-col justify-between">
+
+    <!-- Cabeçalho / Hero -->
+    <header class="bg-white text-center pt-8 pb-12 px-4 shadow-sm relative rounded-b-[40px] border-b-2 border-brand-100">
+        <div class="max-w-4xl mx-auto flex flex-col items-center">
+
+            <!-- Logo / Selo -->
+            <div class="w-32 h-32 md:w-40 md:h-40 rounded-full bg-brand-50 border-4 border-brand-200 flex flex-col items-center justify-center p-4 shadow-inner mb-4 relative">
+                <i data-lucide="cake" class="w-10 h-10 text-brand-500 mb-1"></i>
+                <h1 class="font-title text-2xl md:text-3xl text-brand-600 font-bold leading-tight">Recanto Doce</h1>
+                <span class="text-[10px] tracking-widest text-brand-400 uppercase font-semibold">Bolos & Doces</span>
+                <div class="absolute -bottom-2 text-brand-400">
+                    <i data-lucide="heart" class="w-4 h-4 fill-brand-300 stroke-none"></i>
+                </div>
+            </div>
+
+            <!-- Apresentação -->
+            <h2 class="text-2xl md:text-3xl font-title text-brand-600 mb-2">Sua vida mais doce e especial</h2>
+            <p class="text-xs md:text-sm text-brand-800/80 max-w-md mx-auto">
+                Bolos caseiros, tortas recheadas e doces gourmet feitos artesanalmente com os melhores ingredientes e muito carinho.
+            </p>
+
+            <!-- Links Rápidos de Contato -->
+            <div class="flex flex-wrap justify-center gap-3 mt-6">
+                <a href="https://wa.me/5511913579559" target="_blank" class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white text-xs md:text-sm font-medium px-4 py-2 rounded-full transition-all shadow-sm hover:shadow">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i> (11) 91357-9559
+                </a>
+                <a href="https://instagram.com/anapdoces" target="_blank" class="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white text-xs md:text-sm font-medium px-4 py-2 rounded-full transition-all shadow-sm hover:shadow">
+                    <i data-lucide="camera" class="w-4 h-4"></i> @anapdoces
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal / Cardápio -->
+    <main class="max-w-5xl mx-auto px-4 py-10 w-full flex-grow">
+
+        <div class="text-center mb-10">
+            <span class="bg-brand-100 text-brand-600 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Nosso Menu</span>
+            <h3 class="font-title text-4xl text-brand-800 mt-2">Cardápio Delícias</h3>
+            <div class="w-16 h-1 bg-brand-300 mx-auto rounded-full mt-2"></div>
+        </div>
+
+        <!-- Seção Grid de Categorias -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Categoria: Tortas Salgadas -->
+            <section class="bg-white p-6 rounded-3xl shadow-sm border border-brand-100 card-menu flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 border-b border-brand-100 pb-3 mb-4">
+                        <div class="p-2 bg-brand-50 text-brand-500 rounded-2xl">
+                            <i data-lucide="pie-chart" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-title text-2xl text-brand-800">Tortas Salgadas</h4>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between items-baseline border-b border-dashed border-brand-100 pb-2">
+                            <span class="font-medium">Torta de Frango</span>
+                            <span class="font-semibold text-brand-600">R$ 55,00</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-dashed border-brand-100 pb-2">
+                            <span class="font-medium">Torta de Brócolis</span>
+                            <span class="font-semibold text-brand-600">R$ 55,00</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-dashed border-brand-100 pb-2">
+                            <span class="font-medium">Torta de Palmito</span>
+                            <span class="font-semibold text-brand-600">R$ 55,00</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-dashed border-brand-100 pb-2">
+                            <span class="font-medium">Torta de Frango c/ Cream Cheese</span>
+                            <span class="font-semibold text-brand-600">R$ 60,00</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-dashed border-brand-100 pb-2">
+                            <span class="font-medium">Torta de Brócolis c/ Cream Cheese</span>
+                            <span class="font-semibold text-brand-600">R$ 60,00</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Categoria: Tortas Doces -->
+            <section class="bg-white p-6 rounded-3xl shadow-sm border border-brand-100 card-menu flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 border-b border-brand-100 pb-3 mb-4">
+                        <div class="p-2 bg-brand-50 text-brand-500 rounded-2xl">
+                            <i data-lucide="apple" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-title text-2xl text-brand-800">Tortas Doces</h4>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="border-b border-dashed border-brand-100 pb-3">
+                            <div class="flex justify-between items-baseline">
+                                <span class="font-medium text-lg">Torta Caramelizada</span>
+                                <span class="font-semibold text-brand-600">R$ 45,00</span>
+                            </div>
+                            <p class="text-xs text-brand-800/70 mt-1">
+                                <span class="font-semibold text-brand-500">Sabores:</span> Banana / Abacaxi / Maçã
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Dica visual de personalização -->
+                <div class="mt-6 p-3 bg-brand-50 rounded-2xl text-xs text-brand-800/80 flex items-center gap-2">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-brand-400 shrink-0"></i>
+                    <span>Sob encomenda! Faça seu pedido com antecedência.</span>
+                </div>
+            </section>
+
+            <!-- Categoria: Bolos (Ocupa coluna dupla no desktop) -->
+            <section class="bg-white p-6 rounded-3xl shadow-sm border border-brand-100 card-menu md:col-span-2">
+                <div class="flex items-center gap-3 border-b border-brand-100 pb-3 mb-4">
+                    <div class="p-2 bg-brand-50 text-brand-500 rounded-2xl">
+                        <i data-lucide="cake" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-title text-2xl text-brand-800">Bolos Deliciosos</h4>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                    <!-- Bolos Simples -->
+                    <div class="border-b border-dashed border-brand-100 pb-3">
+                        <div class="flex justify-between items-baseline">
+                            <span class="font-medium text-lg text-brand-900">Bolos Simples</span>
+                            <span class="font-semibold text-brand-600">R$ 30,00</span>
+                        </div>
+                        <p class="text-xs text-brand-800/70 mt-1 leading-relaxed">
+                            <span class="font-semibold text-brand-500">Sabores:</span> Cenoura, Iogurte, Laranja, Limão, Baunilha, Abacaxi, Maracujá, Paçoca, Fubá, Milho, Chocolate, Mesclado, Fubá com Goiabada.
+                        </p>
+                    </div>
+
+                    <!-- Bolos Especiais -->
+                    <div class="border-b border-dashed border-brand-100 pb-3">
+                        <div class="flex justify-between items-baseline">
+                            <span class="font-medium text-lg text-brand-900">Bolos Especiais</span>
+                            <span class="font-semibold text-brand-600">R$ 40,00</span>
+                        </div>
+                        <p class="text-xs text-brand-800/70 mt-1 leading-relaxed">
+                            <span class="font-semibold text-brand-500">Sabores:</span> Banana, Maçã, Pamonha, Churros, Farofa, Nozes com Damasco.
+                        </p>
+                    </div>
+
+                    <!-- Bolo Vulcão -->
+                    <div class="border-b border-dashed border-brand-100 pb-3">
+                        <div class="flex justify-between items-baseline">
+                            <span class="font-medium text-lg text-brand-900">Bolo Vulcão</span>
+                            <span class="font-semibold text-brand-600">R$ 45,00</span>
+                        </div>
+                        <p class="text-xs text-brand-800/70 mt-1">
+                            <span class="font-semibold text-brand-500">Sabores:</span> Chocolate, Ninho, Limão, Maracujá.
+                        </p>
+                    </div>
+
+                    <!-- Vulcão Ninho c/ Nutella -->
+                    <div class="border-b border-dashed border-brand-100 pb-3 flex justify-between items-baseline">
+                        <span class="font-medium text-lg text-brand-900">Bolo Vulcão Ninho c/ Nutella</span>
+                        <span class="font-semibold text-brand-600">R$ 50,00</span>
+                    </div>
+
+                    <!-- Bolo de Mousse -->
+                    <div class="border-b border-dashed border-brand-100 pb-3">
+                        <div class="flex justify-between items-baseline">
+                            <span class="font-medium text-lg text-brand-900">Bolo de Mousse</span>
+                            <span class="font-semibold text-brand-600">R$ 35,00</span>
+                        </div>
+                        <p class="text-xs text-brand-800/70 mt-1">
+                            <span class="font-semibold text-brand-500">Sabores:</span> Limão, Maracujá.
+                        </p>
+                    </div>
+
+                    <!-- Porções Menores -->
+                    <div class="grid grid-cols-3 gap-2 pt-1 text-center">
+                        <div class="bg-brand-50 p-2 rounded-2xl">
+                            <span class="block text-xs text-brand-800 font-medium">Bolo Baby</span>
+                            <span class="text-xs font-semibold text-brand-600">R$ 20,00</span>
+                        </div>
+                        <div class="bg-brand-50 p-2 rounded-2xl">
+                            <span class="block text-xs text-brand-800 font-medium">Vulcãozinho</span>
+                            <span class="text-xs font-semibold text-brand-600">R$ 30,00</span>
+                        </div>
+                        <div class="bg-brand-50 p-2 rounded-2xl">
+                            <span class="block text-xs text-brand-800 font-medium">Bolo de Pote</span>
+                            <span class="text-xs font-semibold text-brand-600">R$ 12,00</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Categoria: Pudins -->
+            <section class="bg-white p-6 rounded-3xl shadow-sm border border-brand-100 card-menu flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 border-b border-brand-100 pb-3 mb-4">
+                        <div class="p-2 bg-brand-50 text-brand-500 rounded-2xl">
+                            <i data-lucide="dessert" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-title text-2xl text-brand-800">Pudins Cremosos</h4>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between items-baseline border-b border-dashed border-brand-100 pb-2">
+                            <span class="font-medium">Pudim Grande</span>
+                            <span class="font-semibold text-brand-600">R$ 60,00</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-dashed border-brand-100 pb-2">
+                            <span class="font-medium">Pudim Pequeno</span>
+                            <span class="font-semibold text-brand-600">R$ 14,00</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-dashed border-brand-100 pb-2">
+                            <span class="font-medium">Pudim Mini</span>
+                            <span class="font-semibold text-brand-600">R$ 10,00</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Categoria: Doces -->
+            <section class="bg-white p-6 rounded-3xl shadow-sm border border-brand-100 card-menu flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 border-b border-brand-100 pb-3 mb-4">
+                        <div class="p-2 bg-brand-50 text-brand-500 rounded-2xl">
+                            <i data-lucide="candy" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-title text-2xl text-brand-800">Doces & Trufas</h4>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between items-baseline border-b border-dashed border-brand-100 pb-2">
+                            <span class="font-medium">Cone Gourmet</span>
+                            <span class="font-semibold text-brand-600">R$ 12,00</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-dashed border-brand-100 pb-2">
+                            <span class="font-medium">Trufa Tradicional</span>
+                            <span class="font-semibold text-brand-600">R$ 2,50</span>
+                        </li>
+                        <li class="flex justify-between items-baseline border-b border-dashed border-brand-100 pb-2">
+                            <span class="font-medium">Trufa Ninho c/ Nutella</span>
+                            <span class="font-semibold text-brand-600">R$ 3,00</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Chamada para Ação / Encomendas -->
+        <div class="mt-12 text-center bg-gradient-to-r from-brand-100 via-brand-200 to-brand-100 p-8 rounded-3xl border border-brand-200 shadow-sm">
+            <h3 class="font-title text-3xl text-brand-900 mb-2">Faça já sua encomenda!</h3>
+            <p class="text-sm text-brand-800 mb-6 max-w-lg mx-auto">
+                Atendemos sob encomenda para garantir que tudo saia fresquinho e perfeito para você ou para a sua festa.
+            </p>
+            <a href="https://wa.me/5511913579559?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" class="inline-flex items-center gap-3 bg-brand-500 hover:bg-brand-600 text-white font-medium px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5">
+                <i data-lucide="shopping-bag" class="w-5 h-5"></i> Fazer Pedido no WhatsApp
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-white border-t border-brand-100 pt-8 pb-6 px-4 text-center mt-10">
+        <div class="max-w-4xl mx-auto flex flex-col items-center gap-4">
+
+            <div class="flex items-center gap-2">
+                <i data-lucide="heart" class="w-4 h-4 text-brand-400 fill-brand-400"></i>
+                <span class="font-title text-2xl text-brand-600">Recanto Doce</span>
+                <i data-lucide="heart" class="w-4 h-4 text-brand-400 fill-brand-400"></i>
+            </div>
+
+            <!-- Redes Sociais & Contatos -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-brand-800">
+                <a href="tel:11913579559" class="flex items-center gap-1.5 hover:text-brand-600">
+                    <i data-lucide="phone" class="w-4 h-4 text-brand-400"></i> (11) 91357-9559
+                </a>
+                <span class="hidden sm:inline text-brand-200">•</span>
+                <a href="https://instagram.com/anapdoces" target="_blank" class="flex items-center gap-1.5 hover:text-brand-600">
+                    <i data-lucide="camera" class="w-4 h-4 text-brand-400"></i> @anapdoces
+                </a>
+            </div>
+
+            <p class="text-[11px] text-brand-400 mt-2">
+                © Recanto Doce - Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
